@@ -1,0 +1,14 @@
+{
+	"extends": "@workspace/typescript-config/hono.json",
+	"compilerOptions": {
+		"baseUrl": "./",
+		"paths": {
+		  "@/*": ["./src/*"],
+		  "@workspace/schemas/*": ["../../packages/schemas/src/*"]
+		},
+		"outDir": "./dist"
+	},
+	"tsc-alias": {
+		"resolveFullPaths": true
+	}
+}
